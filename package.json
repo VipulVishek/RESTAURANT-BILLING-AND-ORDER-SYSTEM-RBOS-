@@ -1,0 +1,33 @@
+{
+  "name": "pos-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",
+    "index":"nodemon index.js",
+    "client":"npm start --prefix client",
+    "dev":"concurrently \"npm run index\" \"npm run client\" ",
+    "seed": "node seeder.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trendmicro/react-sidenav": "^0.5.0",
+    "antd": "^5.18.0",
+    "axios": "^1.7.2",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "framer-motion": "^11.2.10",
+    "mongoose": "^8.4.1",
+    "react": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.23.1",
+    "redux": "^5.0.1",
+    "redux-thunk": "^3.1.0"
+  }
+}
